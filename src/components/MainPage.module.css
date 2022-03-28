@@ -1,0 +1,24 @@
+.container {
+  margin: 0 auto;
+  width: 120rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 100vh;
+}
+
+.title {
+  font-size: 7.4rem;
+  color: rgba(65, 252, 230, 0.759);
+  margin-top: 8.6rem;
+  text-transform: uppercase;
+}
+
+.page {
+  background-image: url("../../img/background2.jpg");
+  background-size: cover;
+}
+
+.main {
+  justify-self: center;
+  align-self: center;
+}

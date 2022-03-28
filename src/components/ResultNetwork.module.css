@@ -1,0 +1,135 @@
+.models {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 2rem;
+}
+
+.radioContainer {
+  display: flex;
+  cursor: pointer;
+  font-size: 22px;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.modelLabel {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+/* Hide the browser's default radio button */
+.modelRadio {
+  opacity: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.modelRadio,
+.checkmark,
+.checkmark::after {
+  position: absolute;
+  height: 2.5rem;
+  width: 2.5rem;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.radioBox {
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+
+  background-color: transparent;
+  border-radius: 50%;
+  border: 3px solid #34495e;
+  transition: all 0.3s;
+}
+
+/* On mouse-over, add a grey background color */
+.radioContainer:hover .modelRadio ~ .checkmark {
+  background-color: #1a1020;
+}
+
+/* When the radio button is checked, add a blue background */
+.modelRadio:checked ~ .checkmark {
+  background-color: #1a1020;
+  border: none;
+  box-shadow: 0px 0px 0px 0.8rem #3be3d0 inset;
+}
+
+.radioContainer:active .checkmark {
+  box-shadow: 0px 0px 0px 0.6rem #34495e inset;
+}
+
+.title {
+  font-size: 4.8rem;
+  color: #3be3d0;
+  align-self: end;
+}
+
+.networkBox {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 2rem;
+  align-self: center;
+}
+
+.icon {
+  font-size: 4.8rem;
+  align-self: center;
+}
+
+.titleBox {
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  gap: 1rem;
+}
+
+.onlyModel {
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: #3be3d0;
+  align-self: center;
+  grid-column: 1 / -1;
+}
+
+.subtitle {
+  color: #c92a2a;
+  grid-column: 1 / -1;
+  font-size: 3rem;
+}
+
+.detail {
+  font-size: 2.4rem;
+  align-self: center;
+  padding: 0.5rem;
+  border-bottom: #3be3d0 2px solid;
+  cursor: pointer;
+}
+.detail:hover {
+  border-bottom: none;
+}
+
+.detail i {
+  margin-right: 1rem;
+  color: #3be3d0;
+}

@@ -1,0 +1,80 @@
+.network {
+  width: 16rem;
+  height: 16rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 50%;
+  background-color: rgba(240, 248, 255, 0.102);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px 0px;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+
+.network:hover {
+  border: 4px rgba(65, 252, 230, 0.719) solid;
+  transition: border 0.1s;
+}
+
+.name {
+  color: white;
+  font-size: 1.8rem;
+}
+
+.icon {
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+}
+
+.selected {
+  transition: box-shadow 0.5s;
+  border: 4px rgba(65, 252, 230, 0.719) solid;
+  /* 
+  box-shadow: rgba(65, 252, 230, 0.664) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset; */
+}
+
+.settings {
+  width: 16rem;
+  height: 4.2rem;
+  display: flex;
+  gap: 1.6rem;
+  justify-content: space-evenly;
+  align-items: center;
+  align-self: center;
+  padding: 20px;
+  margin-bottom: 0.2rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.container:hover .network {
+  margin-bottom: 2rem;
+}
+
+.settingText {
+  align-self: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-bottom: 1rem;
+
+  font-size: 1.7rem;
+  background-color: #1a1020;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.settingUpperBox {
+  background-color: #1a1020;
+  display: flex;
+  flex-direction: column;
+  color: #41fce7;
+  border-radius: 20px;
+}

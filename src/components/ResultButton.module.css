@@ -1,0 +1,20 @@
+.button {
+  background-color: #1a1020;
+  color: #41fce7;
+  font-size: 6.2rem;
+  padding: 2.4rem 6.4rem;
+  align-self: center;
+  justify-self: center;
+  object-fit: contain;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 2rem;
+  transition: all 0.2s;
+  margin-top: 4rem;
+}
+
+.button:hover {
+  border: 3px solid #41fce7;
+  background-color: #24162d;
+}

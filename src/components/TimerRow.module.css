@@ -1,0 +1,39 @@
+.number {
+  font-size: 2.4rem;
+  width: 5.4rem;
+  height: 4rem;
+  border-radius: 4px;
+  color: #3be3d0;
+  background-color: inherit;
+  border: 3px #3be3cf63 solid;
+}
+
+.label {
+  font-size: 2.4rem;
+}
+
+.button {
+  background-color: white;
+}
+
+.number:focus {
+  outline: none;
+  border: 3px #41fce7 solid;
+}
+
+.number::-webkit-outer-spin-button,
+.number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.number {
+  -moz-appearance: textfield;
+}
+
+.inputRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
